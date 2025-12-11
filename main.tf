@@ -1,11 +1,15 @@
-terraform {
+terraform {/*  cloud {
+    organization = "policy-as-code-training"
+    workspaces {
+      name = "tf-vault-qa-am"
+    }
+  }*/
   required_providers {
     aws = {
-      source = "hashicorp/aws"
+      source  = "hashicorp/aws"
     }
   }
 }
-
 provider "aws" {
   region  = "us-west-1"
 }
